@@ -1,3 +1,10 @@
+/*
+Criar um arquivo remover.js
+Esse script deve receber um número como parâmetro
+e deve remover a pessoa da posição indicada pelo número
+*/
+
+
 // Passo 1: Capturar o número digitado pelo usuário.
 
 // Passo 2: Importar o array de pessoas
@@ -12,13 +19,13 @@ let pessoas = require('./pessoas.json');
 const fs = require('fs');
 
 console.table(pessoas);
-let removerPessoa = 5;
-
-console.log(`Removendo a pessoa da posição ${removerPessoa}`);
-pessoas.splice(removerPessoa);
+let removerPessoaAPartirDaPosicao = 1;
+let removerPessoa = 2;
+console.log(`Removendo a pessoa a partir da posição ${removerPessoaAPartirDaPosicao} até a posição: ${removerPessoa}`);
+pessoas.splice(removerPessoaAPartirDaPosicao, removerPessoa);
 console.log('-'.repeat(103));
 console.log('Novo Array de Pessoas atualizado');
 console.table(pessoas);
 
-fs.writeFileSync('pessoas.json', JSON.stringify(pessoas));
+/* fs.writeFileSync('pessoas.json', JSON.stringify(pessoas)); */
 
