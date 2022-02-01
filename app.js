@@ -17,5 +17,10 @@ pessoas.push(pessoa);
 // Passo 4: Salvar o array de pessoas no arquivo pessoas.json
 fs.writeFileSync('pessoas.json', JSON.stringify(pessoas,null,4))
 
-// Passo 5: Mostrar o array de pessoas no dormarto de tabela
+// Passo 5: Mostrar o array de pessoas no formarto de tabela
+/*
+Criar um arquivo removeListener.js
+Esse script deve receber um número como parâmetro
+e deve remover a pessoa da posição indicada pelo número
+*/
 
