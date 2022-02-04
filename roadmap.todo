@@ -18,12 +18,12 @@ Fase 2: Implementar funções para exibição de pessoas casadas:
 
 Fase 3: Implementar a alteração de pessoas:
     ✔ Criar um arquivo alterar.js @done(22-02-02 09:25)
-    ☐ Neste arquivo, capturar os dados informados pelo usuário
-       os dados imputados na seguinte ordem
-       . posição da pessoa
-       . nome
-       . cpf
-       . casado
-       . filhos
-    ☐ Criar um objeto literal no mesmo formato já utlizado. (Observar os objetos do pessoas.json)
-    ☐ Substituir a pessoa da posição desejada pela nova pessoa usando a função array.splice
+    ✔ Neste arquivo, capturar os dados informados pelo usuário @done(22-02-03 20:52)
+       ✔ os dados imputados na seguinte ordem @done(22-02-03 20:52)
+       ✔ . posição da pessoa @done(22-02-03 20:52)
+       ✔ . nome @done(22-02-03 20:52)
+       ✔ . cpf @done(22-02-03 20:52)
+       ✔ . casado @done(22-02-03 20:52)
+       ✔ . filhos @done(22-02-03 20:52)
+    ✔ Criar um objeto literal no mesmo formato já utlizado. (Observar os objetos do pessoas.json) @done(22-02-03 20:52)
+    ✔ Substituir a pessoa da posição desejada pela nova pessoa usando a função array.splice @done(22-02-03 20:53)
