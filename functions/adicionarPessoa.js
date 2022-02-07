@@ -1,5 +1,6 @@
-const pessoas = require('./pessoas.json');
+const pessoas = require('./database/pessoas.json');
 const fs = require('fs');
+const path = require('path');
 
 // Passo 1: Capturar: nome, cpf, casado, filhos do terminal
 // e guardar em variáveis de mesmos nomes
@@ -15,7 +16,7 @@ const pessoa = {nome, cpf, casado, filhos};
 pessoas.push(pessoa);
 
 // Passo 4: Salvar o array de pessoas no arquivo pessoas.json
-fs.writeFileSync('pessoas.json', JSON.stringify(pessoas,null,4));
+fs.writeFileSync(path.resolve('databse', 'pessoas.json'), JSON.stringify(pessoas,null,4));
 
 // Passo 5: Mostrar o array de pessoas no formarto de tabela
 

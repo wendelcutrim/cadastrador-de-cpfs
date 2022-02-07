@@ -1,5 +1,6 @@
-let pessoas = require('./pessoas.json');
+const pessoas = require('./database/pessoas.json');
 const fs = require('fs');
+const path = require('path');
 
 const alterarDadosPessoa = (index, nome, cpf, casado, filhos) => {
     const novosDados = {
@@ -10,7 +11,7 @@ const alterarDadosPessoa = (index, nome, cpf, casado, filhos) => {
     }
 
     const novosDadosAlterados = pessoas.splice(pessoas[index] = novosDados);
-    fs.writeFileSync('pessoas.json', JSON.stringify(novosDadosAlterados, null, 4));
+    fs.writeFileSync(path.resolve('databse', 'pessoas.json'), JSON.stringify(novosDadosAlterados, null, 4));
     console.log('Atualizando os dados do Array de Pessoas...');
 
     setTimeout(() => {
